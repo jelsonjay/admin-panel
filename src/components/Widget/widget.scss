@@ -1,0 +1,61 @@
+@use '../../scss/' as *;
+
+
+.widget {
+  display: flex;
+  flex: 1;
+  justify-content: space-between;
+  padding: 10px;
+  border-radius: .3rem;
+  -webkit-box-shadow: -2px 1px 7px 0px rgba(0, 0, 0, 0.22);
+  box-shadow: -2px 1px 7px 0px rgba(0, 0, 0, 0.22);
+
+  .left,
+  .right {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+
+    .title {
+      font-weight: bold;
+      font-size: 14px;
+      color: $primary;
+      text-transform: uppercase;
+    }
+
+    .counter {
+      font-size: 24px;
+      font-weight: 300;
+    }
+
+    .link {
+      width: max-content;
+      font-size: 12px;
+      border-bottom: .1rem solid $primary;
+    }
+
+    .percentage {
+      display: flex;
+      align-items: center;
+      font-size: 14px;
+
+      &.positive {
+        color: $green;
+      }
+
+      &.negative {
+        color: $red;
+      }
+    }
+
+    .icon {
+      padding: 5px;
+      //background-color: $primary;
+      font-size: 30px;
+      border-radius: .3rem;
+      align-self: flex-end;
+    }
+  }
+
+}

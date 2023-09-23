@@ -1,0 +1,87 @@
+@use '../../scss/' as *;
+
+
+.container {
+  height: 700px;
+  padding: 20px;
+
+  .title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 10px;
+    color: $gray;
+    font-size: 1.5rem;
+
+    .link {
+      font-size: 1rem;
+      font-weight: 400;
+      border-radius: .5rem;
+      text-decoration: none;
+      border: .1rem solid $green;
+      color: $green;
+      padding: 10px;
+      cursor: pointer;
+    }
+  }
+
+
+
+  .cellWithTable {
+    display: flex;
+    align-items: center;
+
+
+
+    .cellImg {
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-right: 10px;
+    }
+  }
+
+  .cellWithStatus {
+    padding: 5px;
+    border-radius: .3rem;
+
+    &.active {
+      background-color: $green;
+      color: $white;
+    }
+
+    &.pending {
+      background-color: goldenrod;
+      color: $white;
+    }
+
+    &.passive {
+      background-color: $red;
+      color: $white;
+    }
+  }
+
+  .cellAction {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    .btnView {
+      padding: 10px;
+      background-color: $gray;
+      border-radius: .3rem;
+      color: $white;
+      cursor: pointer;
+    }
+
+    .btnDelete {
+      padding: 10px;
+      background-color: $red;
+      border-radius: .3rem;
+      color: $white;
+      cursor: pointer;
+    }
+  }
+}

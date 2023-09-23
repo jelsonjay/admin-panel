@@ -1,0 +1,93 @@
+@use '../../scss/' as *;
+
+
+.sidebar {
+  background-color: $white;
+  flex: 1;
+  border-right: .1rem solid rgb(219, 217, 217);
+  min-height: 100vh;
+
+  // ---TOP----
+  .top {
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .logo {
+      font-size: 24px;
+      font-weight: bold;
+    }
+  }
+
+  hr {
+    height: 0;
+    border: .1rem solid rgb(219, 217, 217);
+  }
+
+  // ---CENTER----
+  .center {
+    padding-left: 10px;
+
+    .title {
+      font-size: 10px;
+      font-weight: bold;
+      text-transform: uppercase;
+      color: cornflowerblue;
+      margin-top: 15px;
+    }
+
+    li {
+      display: flex;
+      align-items: center;
+      padding: 5px;
+      gap: 10px;
+      cursor: pointer;
+
+      &:hover {
+        background-color: azure;
+      }
+    }
+
+    .icon {
+      font-size: 18px;
+      color: $secondary;
+    }
+
+    span {
+      font-size: 15px;
+      font-weight: 500;
+      color: gray;
+    }
+  }
+
+
+  // -----BOTTOM-----
+  .bottom {
+    display: flex;
+    align-items: center;
+    margin: 10px;
+
+    .colorOption {
+      width: 25px;
+      height: 25px;
+      border: 1px solid $secondary;
+      border-radius: .2rem;
+      margin: 5px;
+      cursor: pointer;
+
+      &:nth-child(1) {
+        background-color: $white;
+      }
+
+      &:nth-child(2) {
+        background-color: $dark;
+      }
+
+      &:nth-child(2) {
+        background-color: $dark;
+      }
+
+    }
+  }
+}

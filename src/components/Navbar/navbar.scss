@@ -1,0 +1,80 @@
+@use '../../scss/' as *;
+
+.navbar {
+  height: 50px;
+  display: flex;
+  border-bottom: .1rem solid rgb(231, 228, 228);
+  align-items: center;
+  font-size: 16px;
+  color: $secondary;
+
+
+  .wrapper {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    justify-content: space-between;
+
+    .searchBar {
+      display: flex;
+      align-items: center;
+      border: .1rem solid rgb(231, 228, 228);
+      width: 50%;
+      padding: 5px;
+      border-radius: $borderRadius;
+
+  
+      input {
+        border: none;
+        outline: none;
+        background-color: transparent;
+        width: 100%;
+
+        &::placeholder {
+          font-size: 14px;
+        }
+      }
+    }
+
+    .items {
+      display: flex;
+      align-items: center;
+
+      .item {
+        display: flex;
+        align-items: center;
+        margin-right: 20px;
+        position: relative;
+
+        .icon {
+          font-size: 20px;
+          cursor: pointer;
+        }
+
+        .avatar {
+          width: 30px;
+          height: 30px;
+          object-fit: cover;
+          border-radius: 50%;
+        }
+
+        .counter {
+          width: 15px;
+          height: 15px;
+          font-size: 12px;
+          background-color: $primary;
+          border-radius: 50%;
+          color: $white;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          font-weight: bold;
+          position: absolute;
+          top: -5px;
+          right: -5px;
+        }
+      }
+    }
+  }
+}

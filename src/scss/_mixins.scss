@@ -1,0 +1,23 @@
+@use 'variables';
+
+@mixin container {
+  display: flex;
+  width: 100%;
+}
+
+@mixin itemCenter {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@mixin box-shadow {
+  -webkit-box-shadow: -2px 1px 7px 0px rgba(0, 0, 0, 0.22);
+  box-shadow: -2px 1px 7px 0px rgba(0, 0, 0, 0.22);
+}
+
+@mixin mobile {
+  @media (max-width:678px) {
+    @content
+  }
+}

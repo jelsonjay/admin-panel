@@ -1,0 +1,80 @@
+@use '../../scss/' as *;
+
+
+.banner {
+  flex: 2;
+  padding: 15px;
+  border-radius: .3rem;
+  -webkit-box-shadow: -2px 1px 7px 0px rgba(0, 0, 0, 0.22);
+  box-shadow: -2px 1px 7px 0px rgba(0, 0, 0, 0.22);
+
+  // ----------TOP----------
+  .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: gray;
+
+    .title {
+      font-size: 24px;
+      font-weight: 500;
+    }
+  }
+
+  // ----------BOTTOM----------
+  .bottom {
+    display: flex;
+    padding: 20px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 15px;
+
+    .bannerChart {
+      width: 100px;
+      height: 100px;
+    }
+
+    .amount {
+      font-size: 30px;
+    }
+
+    .desc {
+      font-weight: 300;
+      font-size: 12px;
+      color: grayscale($color: #000000);
+      text-align: center;
+    }
+
+    .summary {
+      display: flex;
+      width: 100%;
+      align-items: center;
+      justify-content: space-between;
+
+      .item {
+        text-align: center;
+
+        .itemTitle {
+          font-size: 14px;
+          color: gray;
+        }
+
+        .itemResult {
+          display: flex;
+          align-items: center;
+          margin-top: 10px;
+          font-size: 14px;
+
+          &.positive {
+            color: $green;
+          }
+
+          &.negative {
+            color: $red;
+          }
+        }
+      }
+    }
+  }
+}
